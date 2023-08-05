@@ -1,0 +1,344 @@
+* {
+  margin-right: 0;
+}
+
+/* Common shared font */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Navigation styles */
+
+nav {
+  display: flex;
+  align-items: center;
+  /* justify-content used for spacing around the properties */
+  justify-content: space-between;
+  margin: 0 200px;
+}
+
+/* Immadiate ul gula flex korar jonno */
+nav > ul {
+  display: flex;
+  align-items: center;
+}
+
+/* Dotted list to none */
+nav li {
+  list-style: none;
+  margin-right: 50px;
+}
+
+/* nav > a = underline bad dewar jonno */
+nav a {
+  text-decoration: none;
+  color: var(--dark-02, #474747);
+  font-size: 20px;
+  /* font-weight: 400; */
+}
+
+/* Mary style */
+.nav-title {
+  color: var(--dark-01, #181818);
+  /* font-family: Open Sans; */
+  font-size: 45px;
+  /* font-style: normal; */
+  /* font-weight: 800; */
+  /* line-height: normal; */
+}
+
+/* Text color Primary- Orange */
+.text-primary {
+  color: #fd6e0a;
+}
+
+/*  */
+.btn-primary {
+  border-radius: 5px;
+  background: #fd6e0a;
+
+  border: 0;
+  padding: 15px 35px;
+
+  color: var(--white-color, #fff);
+  font-size: 20px;
+}
+
+/* Header related styles */
+/* Jhankar used header class */
+header {
+  background: #fff8f3;
+  background-image: url("../images/header_bg.png"),
+    url("../images/developer.png");
+  background-repeat: no-repeat;
+
+  /* posiotion of 2 Background images are added by a comma. */
+  background-position: bottom right, bottom left;
+}
+
+/* Banner section syles starts here */
+/* Banner- writings */
+.banner {
+  padding: 30px 30px 0px 150px; /* Top, Right, Bottom, Left */
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between; /* space between creates spaces between contents so that they move left and righ gapping in the middle */
+  margin-bottom: 0px;
+}
+
+.banner-content {
+  max-width: 500px;
+}
+
+.banner-greetings {
+  color: var(--dark-02, #474747);
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.banner-title {
+  color: var(--dark-01, #181818);
+  font-size: 85px;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.banner-description {
+  color: var(--dark-03, #757575);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+
+  margin-top: 20px;
+  max-width: 585px;
+  margin-bottom: 0px;
+}
+
+.btn-primary {
+  color: var(--white-color, #fff);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+/* main section styles */
+
+main {
+  /* max-width: 1140px; means the contents can not take more than 1140px width */
+  max-width: 1140px;
+  /* margin: 0px auto; auto means: The contents will share the margin between them. */
+  margin: 0px auto;
+}
+
+/* Every section of main body */
+main section {
+  margin-top: 130px;
+}
+
+/* about section */
+.about {
+  /* max-width: 1140px; */
+  padding: 130px;
+
+  border-radius: 10px;
+  background: #fff8f3;
+
+  margin: 130px 0px;
+}
+
+.section-title {
+  color: var(--dark-01, #181818);
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.section-description {
+  color: var(--dark-03, #757575);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.about-info-container {
+  display: flex;
+  justify-content: space-around; /*  It is used in a container to put things organized so that they may take same amound of gap between them. It is used when I have more than 2 items to organoze. Otherwise we use space between, whenever I have only 2 items in my container.  */
+}
+
+.about-info {
+  /* justify-content: space-around; */
+  text-align: center;
+}
+
+.info-title {
+  margin-bottom: 0;
+}
+
+.info-description {
+  margin-top: 2;
+}
+
+#what-i-do-description {
+  padding: 30px 150px;
+}
+
+.skill-container {
+  display: flex;
+  /* space-between = Having spaces between the objects */
+  /* Space-around = Having Spaces around the objects - left and right same space will take */
+  justify-content: space-between;
+  gap: 24px; /* Gap is used to create spaces between the boxes of a flex container. Other than in Flexbox, we use margin!*/
+}
+
+.skill {
+  padding: 30px;
+  /* margin: 24px; */
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+
+/* .skill-description {
+  text-align: justify;
+} */
+
+/* Resume Section */
+
+.resume-container {
+  display: flex;
+  gap: 24px;
+}
+
+.resume-column-title {
+  color: var(#474747);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.resume-item-title {
+  margin-bottom: 10px;
+
+  color: var(#474747);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.resume-item-institute {
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+  color: var(--dark-03, #757575);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.resume-item-description {
+  margin-top: 0;
+}
+
+.resume-container hr {
+  width: 558px;
+  height: 1px;
+  background: #d1d1d1;
+}
+
+/* CV Download */
+.download-cv {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 120px;
+}
+
+/* Footer Section */
+footer {
+  display: flex;
+  gap: 100px;
+  background: #fff8f3;
+  padding: 130px 200px;
+}
+
+footer .footer-column {
+  width: 50%;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+textarea {
+  display: block;
+  margin-bottom: 25px;
+  padding: 18px 35px;
+
+  border: none;
+  border-radius: 5px;
+  background: var(--white-color, #fff);
+
+  width: 100%;
+}
+
+.social-links a {
+  margin-left: 30px;
+}
+
+/* .contact-submit {
+  display: flex;
+  justify-content: center;
+} */
+
+.hide {
+  display: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+  .skill-container,
+  .resume-container,
+  footer {
+    flex-direction: column;
+  }
+  #what-i-do-description {
+    padding: 15px 20px;
+    text-align: justify;
+  }
+  footer {
+    padding: 10px;
+  }
+  footer .footer-column {
+    width: 100%;
+  }
+  .contact input[type="text"],
+  .contact input[type="email"],
+  textarea {
+    width: 80%;
+  }
+
+  .about-info-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .banner-content {
+    max-width: 100%;
+  }
+
+  .banner {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .banner img {
+    width: 100%;
+    padding: 0;
+  }
+
+  header {
+    background-image: none;
+  }
+  /* #submit-id {
+    margin: 0 auto;
+  } */
+}
